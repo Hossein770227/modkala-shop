@@ -8,6 +8,8 @@ marshmallow==3.21.3
 packaging==24.1
 psycopg2-binary==2.9.9
 python-dotenv==1.0.1
+setuptools==71.1.0
 sqlparse==0.5.1
 typing_extensions==4.12.2
 tzdata==2024.1
+wheel==0.43.0
