@@ -20,7 +20,7 @@ class UserRegisterView(View):
     form_class = UserRegisterForm
     def get(self, request):
         form= self.form_class
-        return render(request, 'registration/user_register.html', {'form':form})
+        return render(request, 'accounts/user_register.html', {'form':form})
     
     def post(self, request):
         form =self.form_class(request.POST)
@@ -39,7 +39,7 @@ class UserRegisterView(View):
             }
             messages.success(request, _('we sent you a code'))
             return redirect('accounts:verify_code')
-        return render(request, 'registration/user_register.html', {'form':form})
+        return render(request, 'accounts/user_register.html', {'form':form})
 
 
 
