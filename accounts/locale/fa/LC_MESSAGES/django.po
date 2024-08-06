@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-06 20:58+0330\n"
+"PO-Revision-Date: 2024-08-06 21:00+0330\n"
+"Last-Translator: Anonymous User <anonymous@user.tld>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Translated-Using: django-rosetta 0.10.0\n"
+
+#: .\forms.py:39 .\models.py:10
+msgid "phone number"
+msgstr "شماره تلفن:"
+
+#: .\forms.py:40 .\models.py:11
+msgid "full name"
+msgstr "نام کامل: "
+
+#: .\forms.py:41
+msgid "password"
+msgstr "گذرواژه:"
+
+#: .\forms.py:42
+msgid "confirm password"
+msgstr "تائید گذرواژه:"
+
+#: .\forms.py:49
+msgid "This phone number already exists"
+msgstr "شماره تلفن از قبل وجود دارد"
+
+#: .\forms.py:55
+msgid "passwords dont match"
+msgstr "گذرواژه مطابقت ندارد"
+
+#: .\forms.py:60
+#| msgid "otp code"
+msgid "code"
+msgstr "کد تائید:"
+
+#: .\managers.py:7
+msgid "user must have phone number"
+msgstr "وارد کردن شماره تلفن الزامی است "
+
+#: .\managers.py:9
+msgid "user must have full name"
+msgstr "وارد کردن نام کامل الزامی است"
+
+#: .\models.py:16 .\models.py:17
+msgid "my users"
+msgstr "مخاطبین"
+
+#: .\models.py:49 .\models.py:50
+msgid "otp code"
+msgstr "کد ارسالی"
+
+#: .\templates\accounts\login.html:7 .\templates\accounts\login.html:15
+#: .\templates\accounts\password_change.html:7
+#: .\templates\accounts\password_change.html:15
+#: .\templates\accounts\verify_code.html:7
+#: .\templates\accounts\verify_code.html:15
+msgid "verify code"
+msgstr "تائید کد"
+
+#: .\templates\accounts\login.html:18
+#: .\templates\accounts\password_change.html:18
+#: .\templates\accounts\verify_code.html:18
+msgid "please enter your code"
+msgstr "لطفا کد ارسال شده را وارد کنید."
+
+#: .\templates\accounts\login.html:24
+#: .\templates\accounts\password_change.html:24
+#: .\templates\accounts\user_register.html:24
+#: .\templates\accounts\verify_code.html:24
+msgid "submit"
+msgstr "ارسال"
+
+#: .\templates\accounts\login.html:28
+#: .\templates\accounts\password_change.html:28
+#: .\templates\accounts\user_register.html:28
+#: .\templates\accounts\verify_code.html:28
+msgid "Your entry means acceptance"
+msgstr "ورود به معنایی پذیرش "
+
+#: .\templates\accounts\login.html:28
+#: .\templates\accounts\password_change.html:28
+#: .\templates\accounts\user_register.html:28
+#: .\templates\accounts\verify_code.html:28
+msgid "Terms and Conditions"
+msgstr "قوانین و مقررات "
+
+#: .\templates\accounts\login.html:28
+#: .\templates\accounts\password_change.html:28
+#: .\templates\accounts\user_register.html:28
+#: .\templates\accounts\verify_code.html:28
+msgid "it is modkala"
+msgstr "مد کالا است."
+
+#: .\templates\accounts\user_register.html:7
+msgid "user register"
+msgstr "ثبت نام"
+
+#: .\templates\accounts\user_register.html:15
+msgid "sign up"
+msgstr "ثبت نام"
+
+#: .\templates\accounts\user_register.html:18
+msgid "please enter your information"
+msgstr "لطفا اطلاعات خود را وارد .نید"
+
+#: .\views.py:30
+msgid "we send your code already"
+msgstr "کد تائید از قبل ارسال شده است."
+
+#: .\views.py:40
+msgid "we sent you a code"
+msgstr "کد تائید برای شما ارسال شد."
+
+#: .\views.py:63 .\views.py:67
+msgid "your code time is out"
+msgstr "زمان کد ارسالی به پایان رسیده است."
+
+#: .\views.py:73
+msgid "you register"
+msgstr "ثبت نام با موفقیت انجام شد"
+
+#: .\views.py:77
+msgid "this code is wrong"
+msgstr "کد تائید اشتباه است."
+
+#: .\views.py:89
+msgid "you successfully login"
+msgstr "ورود با موفقیت انجام شد"
+
+#: .\views.py:98
+msgid "you successfully logouted"
+msgstr "خروج با موفقیت انجام شد."
+
+#: .\views.py:109
+msgid "your password successfully changed"
+msgstr "گذرواژه با موفقیت تغییر داده شد."

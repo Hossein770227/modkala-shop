@@ -57,4 +57,4 @@ class UserRegisterForm(forms.Form):
 
 
 class VerifyCodeForm(forms.Form):
-    code =forms.IntegerField()
+    code =forms.IntegerField(label=_('code'))
