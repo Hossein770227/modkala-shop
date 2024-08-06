@@ -47,7 +47,7 @@ class UserRegisterCodeView(View):
     form_class=VerifyCodeForm
     def get(self, request):
         form = self.form_class
-        return render(request, 'registration/verify_code.html', {'form':form})
+        return render(request, 'accounts/verify_code.html', {'form':form})
 
     def post(self, request):
         user_session = request.session['user_registration_info']
@@ -89,7 +89,7 @@ def login_view(request):
             messages.success(request, _('you successfully login'))
             return redirect('products:product_list')
     form = AuthenticationForm()
-    return render(request, 'registration/login.html', {'form':form})
+    return render(request, 'accounts/login.html', {'form':form})
 
 
 def logout_view(request):
@@ -111,4 +111,4 @@ def password_change_view(request):
         return redirect('accounts:change_password')
     else:
         form = PasswordChangeForm(user=request.user)
-    return render(request, 'registration/password_change.html',{'form':form})
+    return render(request, 'accounts/password_change.html',{'form':form})
