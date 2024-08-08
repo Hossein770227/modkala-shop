@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-06 20:58+0330\n"
-"PO-Revision-Date: 2024-08-06 21:00+0330\n"
+"POT-Creation-Date: 2024-08-08 20:33+0330\n"
+"PO-Revision-Date: 2024-08-08 20:35+0330\n"
 "Last-Translator: Anonymous User <anonymous@user.tld>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -19,32 +19,35 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
-#: .\forms.py:39 .\models.py:10
+#: .\forms.py:40 .\models.py:14
 msgid "phone number"
 msgstr "شماره تلفن:"
 
-#: .\forms.py:40 .\models.py:11
+#: .\forms.py:41 .\models.py:15
 msgid "full name"
 msgstr "نام کامل: "
 
-#: .\forms.py:41
+#: .\forms.py:42
 msgid "password"
 msgstr "گذرواژه:"
 
-#: .\forms.py:42
+#: .\forms.py:43
 msgid "confirm password"
 msgstr "تائید گذرواژه:"
 
 #: .\forms.py:49
+msgid "please enter right phone number example 0921xxxxxxx"
+msgstr "لطفا شماره تلفن را به صورت صحیح وارد کنید مثل 0921xxxxxxx"
+
+#: .\forms.py:52
 msgid "This phone number already exists"
 msgstr "شماره تلفن از قبل وجود دارد"
 
-#: .\forms.py:55
+#: .\forms.py:58
 msgid "passwords dont match"
 msgstr "گذرواژه مطابقت ندارد"
 
-#: .\forms.py:60
-#| msgid "otp code"
+#: .\forms.py:63
 msgid "code"
 msgstr "کد تائید:"
 
@@ -56,11 +59,11 @@ msgstr "وارد کردن شماره تلفن الزامی است "
 msgid "user must have full name"
 msgstr "وارد کردن نام کامل الزامی است"
 
-#: .\models.py:16 .\models.py:17
+#: .\models.py:20 .\models.py:21
 msgid "my users"
 msgstr "مخاطبین"
 
-#: .\models.py:49 .\models.py:50
+#: .\models.py:53 .\models.py:54
 msgid "otp code"
 msgstr "کد ارسالی"
 
@@ -116,7 +119,7 @@ msgstr "ثبت نام"
 
 #: .\templates\accounts\user_register.html:18
 msgid "please enter your information"
-msgstr "لطفا اطلاعات خود را وارد .نید"
+msgstr "لطفا اطلاعات خود را وارد کنید"
 
 #: .\views.py:30
 msgid "we send your code already"
@@ -143,9 +146,14 @@ msgid "you successfully login"
 msgstr "ورود با موفقیت انجام شد"
 
 #: .\views.py:98
-msgid "you successfully logouted"
-msgstr "خروج با موفقیت انجام شد."
+#, fuzzy
+#| msgid "you successfully login"
+msgid "you successfully LOGOUT"
+msgstr "ورود با موفقیت انجام شد"
 
 #: .\views.py:109
 msgid "your password successfully changed"
 msgstr "گذرواژه با موفقیت تغییر داده شد."
+
+#~ msgid "you successfully logouted"
+#~ msgstr "خروج با موفقیت انجام شد."

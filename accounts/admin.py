@@ -4,7 +4,6 @@ from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 
 
 
-
 from .forms import UserCreationForm, UserChangeForm
 from .models import MyUser, OtpCode
 

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'jalali_date',
     'accounts',
 
     'rosetta',
@@ -157,3 +158,6 @@ LANGUAGES =(
     ('en', 'English'),
     ('fa', 'Persian'),
 )
+
+PHONENUMBER_DEFAULT_REGION = 'IR'
+PHONENUMBER_DB_FORMAT="NATIONAL"

@@ -3,11 +3,13 @@ from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
 from django.contrib.auth.models import AbstractBaseUser
 
+
+
 from .managers import MyUserManager
 
 
 class MyUser(AbstractBaseUser):
-    phone_number =  models.CharField(verbose_name=_('phone number'), max_length=11, unique=True)
+    phone_number = models.CharField(verbose_name=_('phone number'), max_length=11, unique=True)
     full_name= models.CharField(verbose_name=_('full name'), max_length=100)
     is_active = models.BooleanField(default=True)
     is_admin =models.BooleanField(default=False)

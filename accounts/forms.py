@@ -3,6 +3,7 @@ from django.core.exceptions import ValidationError
 from django.contrib.auth.forms import ReadOnlyPasswordHashField
 from django.utils.translation import gettext_lazy as _
 
+from phonenumber_field.formfields import PhoneNumberField
 
 from .models import MyUser
 
@@ -44,6 +45,8 @@ class UserRegisterForm(forms.Form):
 
     def clean_phone(self):
         phone = self.cleaned_data['phone']
+        if phone [:2] != '09':
+            raise ValidationError(_('please enter right phone number example 0921xxxxxxx'))
         user = MyUser.objects.filter(phone_number=phone).exists()
         if user:
             raise ValidationError(_('This phone number already exists'))
