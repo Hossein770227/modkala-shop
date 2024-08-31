@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'jalali_date',
     'accounts',
+    'products',
 
     'rosetta',
     'crispy_forms',
