@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 import os
 from environs import Env
 from pathlib import Path
+from django.contrib.messages import constants
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -47,7 +48,7 @@ INSTALLED_APPS = [
     'products',
     # third party apps
     "crispy_forms",
-    "crispy_bootstrap5",
+    "crispy_bootstrap4",
     "rosetta",
 ]
 
@@ -147,6 +148,17 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'core.MyUser'
 
-CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
 
-CRISPY_TEMPLATE_PACK = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap4"
+
+
+LANGUAGES =(
+    ('en', 'English'),
+    ('fa', 'Persian'),
+)
+
+# messages config
+MESSAGE_TAGS={
+    constants.ERROR:"danger",
+}

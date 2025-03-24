@@ -1,14 +1,32 @@
-{% extends "_base.html" %}
+{% extends "_base_account.html" %}
+{% load i18n %}
+{% load static %}
 {% load crispy_forms_tags %}
 
 {% block page_title %}
-    verify
+    {% trans "verify code" %}
 {% endblock page_title %}
 
 {% block content %}
-    <form action='' method='POST'>
-        {% csrf_token %}
-        {{form|crispy}}
-        <button type='submit'>submit</button>
-    </form>
+    <div class="h-screen flex justify-center items-center">
+        <div class="bg-white rounded-2xl shadow-box-sm w-11/12 sm:w-7/12 md:w-6/12 lg:w-4/12 xl:w-3/12 h-auto py-5 px-4">
+        <img class="w-48 mx-auto" src="{% static 'image/logo.png' %}" alt="">
+        <div class="mt-5 text-lg text-zinc-700">
+             {% trans "verify code " %}
+        </div>
+        <div class="mt-8 mb-4 text-xs text-zinc-500">
+            {% translate "please enter your code to verify" %}
+            <form action='' method='POST'>
+                {% csrf_token %}
+                {{form|crispy}}
+                <button type='submit' class="mx-auto w-full px-2 py-3 mt-8 text-sm bg-red-500 hover:bg-red-400 transition text-gray-100 rounded-lg">
+                    {% trans "sign up " %}
+                </button>
+                <div class="mt-8 mb-4 text-xs text-zinc-500">
+                    ورود شما به معنای پذیرش <a class="text-red-400 hover:text-red-500 transition" href=""> قوانین و مقررات</a> مدکالا میباشد.
+                </div>
+                </div>
+            </form>
+        </div>
+    </div>
 {% endblock content %}
