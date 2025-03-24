@@ -21,4 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('core.urls')),
     path('products/', include('products.urls')),
+    # rosetta
+    path('rosetta/', include('rosetta.urls')),
 ]
