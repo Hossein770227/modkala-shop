@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        {% block page_title %}
+        {% endblock page_title %}
+
+    </title>
+</head>
+<body>
+    {% include "messages.html" %}
+    {% block content %}
+    {% endblock content %}
+
+</body>
+</html>
